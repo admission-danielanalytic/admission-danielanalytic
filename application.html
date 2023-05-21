@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Daniel Analytics Academy</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="homepage.html">DANIEL ANALYTICS ACADEMY</h1>
+						<nav id="nav">
+							<ul>
+								<li><a href="homepage.html">Home</a></li>
+								<li>
+									<a href="#" class="icon solid fa-angle-down">About Us</a>
+									<ul>
+										<li><a href="who_we_are.html">Who We Are</a></li>
+										<li><a href="programme.html">Our Programme</a></li>
+									</ul>
+								</li>
+								<li><a href="contact.html">Contact Us</a></li>
+							</ul>
+						</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					<h2>Your future awaits...</h2>
+					<h2>We’re glad to have you on board!</h2>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<section class="box special">
+                        <h3 align = "left"><strong>Please carefully fill out all information to apply for our course in data analytics.</strong></h3>
+
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                              const form = document.getElementById("contactform");
+                              form.addEventListener("submit", function(event) {
+                                event.preventDefault(); // Prevent the form from submitting normally
+                                
+                                // Perform form submission
+                                fetch(form.action, {
+                                  method: form.method,
+                                  body: new FormData(form)
+                                })
+                                .then(response => response.json())
+                                .then(data => {
+                                  // Handle the form submission response
+                                  if (data.result === "success") {
+                                    // Redirect to the specified URL
+                                    window.location.href = data.redirect;
+                                  } else {
+                                    // Handle error case
+                                    console.error("Form submission error:", data.error);
+                                  }
+                                })
+                                .catch(error => {
+                                  console.error("Form submission error:", error);
+                                });
+                              });
+                            });
+                          </script>
+
+
+						<form method="post" action="https://script.google.com/macros/s/AKfycbxnleYkMVtH8Fefy-RLC2EI4-m6u9lPHsoEAvTDppS_Ur7U_hYYKBKaQ7i__EiazuV3UA/exec" name="contactform" id="contactform">
+                            <div class="row gtr-50 gtr-uniform">
+                              <div class="col-6 col-12-mobilep">
+                                <h1 align = "left"><b>FirstName</b></h1>
+                                <input type="text" class="form-control" name="fname" id="fname" value="" placeholder="First Name" />
+                              </div>
+                              <div class="col-6 col-12-mobilep">
+                                <h1 align = "left"><b>Surname</b></h1>
+                                <input type="text" class="form-control" name="sname" id="sname" value="" placeholder="Surname" />
+                              </div>
+                              <div class="col-6 col-12-mobilep">
+                                <h1 align = "left"><b>Email Address</b></h1>
+                                <input type="email" class="form-control" name="email" id="email" value="" placeholder="Email Address" />
+                              </div>
+                              <div class="col-6 col-12-mobilep">
+                                <h1 align = "left"><b>Phone Number</b></h1>
+                                <input type="text" class="form-control" name="number" id="phone" value="" placeholder="Phone Number" />
+                              </div>
+                              <div class="col-6 col-12-mobilep">
+                                <h1 align = "left"><b>Country</b></h1>
+                                <select class="form-control" name="country" id="country">
+                                  <option value="email1">Nigeria</option>
+                                  <option value="email2">Ghana</option>
+                                  <option value="email3">South Africa</option>
+                                  <option value="email4">Kenya</option>
+                                </select>
+                              </div>
+                              
+                              <div class="col-6 col-12-mobilep">
+                                <h1 align = "left"><b>What is the highest education you've attained?</b></h1>
+                                <select class="form-control" name="school" id="school">
+                                  <option value="email1">High School</option>
+                                  <option value="email2">Diploma</option>
+                                  <option value="email3">College or Some University</option>
+                                  <option value="email4">Masters/Doctorate</option>
+                                </select>
+                              </div>
+                              <div class="col-6 col-12-mobilep">
+                                <h1 align = "left"><b>How would you describe your employment status?</b></h1>
+                                <select class="form-control" name="status" id="status">
+                                  <option value="email1">Unemployed</option>
+                                  <option value="email2">Employed</option>
+                                  <option value="email3">Self-employed</option>
+                                </select>
+                              </div>
+                              <div class="col-6 col-12-mobilep">
+                                <h1 align = "left"><b>What do you hope to do upon completing this program?</b></h1>
+                                <select class="form-control" name="need" id="need">
+                                  <option value="email1">Find a first job</option>
+                                  <option value="email2">Get a better job</option>
+                                  <option value="email3">Change career</option>
+                                  <option value="email3">Get a promotion</option>
+                                </select>
+                              </div>
+                              <div class="col-12">
+                                <h1 align = "left"><b>Do you have any experience with data? If  yes, tell us about it.</b></h1>
+                                <textarea class="form-control" name="message" id="comments" placeholder="Your text" rows="6"></textarea>
+                              </div>
+                              <div class="col-12">
+                                <ul class="actions special">
+                                  <li><input type="submit" class="button btn-primary" id="submit" value="Save & Go To Payment Page" /></li>
+                                </ul>
+                              </div>
+                            </div>
+                            </form>
+					</section>
+				</section>
+
+                
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Daniel Analytics 2023</li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
